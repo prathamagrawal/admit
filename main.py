@@ -1,6 +1,16 @@
 import joblib
 import streamlit as st
 import pandas
+import sys
+
+if sys.version_info >= (3, 8):
+    import zipfile
+else:
+    import zipfile38 as zipfile
+
+import warnings
+warnings.simplefilter('ignore')
+
 
 
 def welcome():
