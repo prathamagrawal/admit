@@ -10,7 +10,7 @@ def pred(gre,toefl,univ,SOP,LOR,CGPA,research,sports,certificate):
 
     import pickle
 
-    loaded_model = pickle.load(open('model.sav', 'rb'))
+    loaded_model = pickle.load(open('finalized_model.sav', 'rb'))
     result = loaded_model.predict(x_test)
     joblib.dump(loaded_model, 'finalized_model.sav')
     return result
